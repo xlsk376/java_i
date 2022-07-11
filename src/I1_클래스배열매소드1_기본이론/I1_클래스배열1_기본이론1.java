@@ -16,7 +16,7 @@ public class I1_클래스배열1_기본이론1 {
 	public static void main(String[] args) {
 				
 		//-------------------------------------------------		
-		Product [] prList = new Product[2]; // 머리
+		Product [] prList = new Product[2]; // 머리 와 몸통 개수는 일치해야함
 		prList[0] = new Product(); // 몸통
 		prList[1] = new Product(); // 몸통
 		
