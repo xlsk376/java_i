@@ -14,7 +14,6 @@ public class MemberDAO {
 	}
 	
 	void insertMember(Member member) {
-		
 		memberList[memberCount] = member;
 		memberCount += 1;
 	}

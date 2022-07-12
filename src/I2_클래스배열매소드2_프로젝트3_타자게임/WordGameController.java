@@ -24,11 +24,11 @@ public class WordGameController {
 		wordDAO.insertSampleList();		
 		memberlog = null;
 				
-		mainMeue();
+		mainMenu();
 	}
 	
 	
-	void mainMeue() {
+	void mainMenu() {
 		while(true) {
 			System.out.println("[1] 회원가입 [2] 로그인 [0] 종료");
 			int sel = scan.nextInt();

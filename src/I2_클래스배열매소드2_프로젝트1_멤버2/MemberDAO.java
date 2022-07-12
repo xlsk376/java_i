@@ -65,6 +65,7 @@ public class MemberDAO {
 		}
 		return member;
 	}
+	
 	void printMemberList() {
 		for(int i = 0; i < memberCount; i++) {
 			memberList[i].printMember();

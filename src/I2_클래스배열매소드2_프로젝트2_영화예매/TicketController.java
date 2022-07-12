@@ -41,9 +41,9 @@ public class TicketController {
 			if(sel == 1) {
 				seatDAO.ticketing(log);
 			}else if(sel == 2) {
-				
+				seatDAO.ticketCancel(log);
 			}else if(sel == 3) {
-				
+				seatDAO.printAll(log);
 			}else if(sel == 0) {
 				System.out.println("[·Î±×¾Æ¿ô]");
 				break;

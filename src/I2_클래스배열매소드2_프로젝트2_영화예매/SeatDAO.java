@@ -4,8 +4,9 @@ public class SeatDAO {
 	Scanner scan;
 	Seat[] seatList;
 	int max;
+	
 	void init() {
-		max = 8;
+		max = 8; // 좌석수 지정
 		scan = new Scanner(System.in);
 		seatList = new Seat[max];
 		for (int i = 0; i < seatList.length; i++) {
@@ -16,12 +17,12 @@ public class SeatDAO {
 		}
 	}
 
-	void printSeat() {
+	void printSeat() { // 좌석현황
 		for (int i = 0; i < seatList.length; i++) {
-			System.out.print("[" + seatList[i].number + "]");
+			System.out.print("[" + seatList[i].number + "]"); // 좌석번호
 		}
 		System.out.println();
-
+		
 		for (int i = 0; i < seatList.length; i++) {
 			if (seatList[i].check == false) {
 				System.out.print("[x]");
@@ -48,7 +49,25 @@ public class SeatDAO {
 		}else {
 			System.out.println("[예매할수없습니다]");
 		}
-		
+	}
+	
+	void ticketCancel(String log) {
+		printSeat();
+		System.out.println("[취소] 번호를 입력 : ");
+		int sel = scan.nextInt();
+		if(sel <= 0 || sel > max) {
+			return;
+		}
+		sel -= 1;
+		if(seatList[sel].check == true) {
+			seatList[sel].check = false;
+			System.out.println("[취소완료]");
+			printSeat();
+		}
+	}
+	
+	void printAll(String log) {
+		printSeat();
 	}
 	
 }
