@@ -10,6 +10,7 @@ class Product{
 	
 	void printData() {
 		System.out.println(name + " " + price);
+		
 	}
 }
 public class I1_클래스배열1_기본이론1 {

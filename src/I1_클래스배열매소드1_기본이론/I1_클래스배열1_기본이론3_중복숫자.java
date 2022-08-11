@@ -22,7 +22,7 @@ public class I1_클래스배열1_기본이론3_중복숫자 {
 		
 		for(int i=0; i<5; i++) {
 					
-			int rNum = ran.nextInt(5);;
+			int rNum = ran.nextInt(5);
 			if(ranList[rNum].check == false) {
 				ranList[rNum].check = true;
 				ranList[rNum].num = i + 1;

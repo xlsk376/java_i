@@ -44,7 +44,7 @@ public class SeatDAO {
 		if(seatList[sel].check == false) {
 			seatList[sel].userID = log;
 			seatList[sel].check = true;
-			System.out.println("[예메완료]");
+			System.out.println("[예매완료]");
 			printSeat();
 		}else {
 			System.out.println("[예매할수없습니다]");
